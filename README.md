@@ -1,5 +1,6 @@
 # Fury
-A custom game engine written in C++ / OGRE3d.
+A custom game engine written in C++ / DirectX 11.
+Audio backend is XAudio2.
 
 # How can I help?
-One of our current shortends is rendering (and Win32 windows).
+One of our current shortends is rendering, audio, and Win32 windows.
