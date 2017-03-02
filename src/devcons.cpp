@@ -1,6 +1,6 @@
 /*			                   		*\
 
-This file is part of Playback version 0.4-internal-dx10.
+This file is part of Fury version 0.4.
 
 Copyright (c) 2017 createjump & Spectre.
 
@@ -10,7 +10,7 @@ Copyright (c) 2017 createjump & Spectre.
 /*								*\
 File: devcons.cpp
 ==================================
-File Details: The developer console routines for the Playback game core.
+File Details: The developer console routines for the  game core.
 
 Original creator: createjump
 

@@ -1,6 +1,6 @@
 /*			                   		*\
 
-This file is part of Fury Engine version 0.4-internal-dx11.
+This file is part of Fury version 0.4-internal-dx11.
 
 Copyright (c) 2017 createjump & Spectre.
 
@@ -28,6 +28,7 @@ Original creator: createjump
 
 
 
+
 using namespace std;
 
 // Use the FuryEng namespace
@@ -35,18 +36,24 @@ using namespace FuryEng;
 
 
 
-void GameLoop(){
-	while (true){
-	
-	}
+void OpenConsole() {
+	AllocConsole();
+	freopen("conin$", "r", stdin);
+	freopen("conout$", "w", stdout);
+	freopen("conout$", "w", stderr);
+
 }
 
 
-int main(int argc, char *argv[]){
+int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nCmdShow) {
+OpenConsole();
 FuryEng::init();
-GameLoop();
+Win32Window w1(hInstance);
+if (!w1.InitializeWindow()) { return -1; }
+w1.Run();
 FuryEng::Destruct();
 FuryEng::Logger::Log("Program loop over","MAIN" ,  __FILE__ , __LINE__);
+
 }
 
 

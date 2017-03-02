@@ -1,0 +1,6 @@
+﻿  window.cpp
+  main.cpp
+  Generating Code...
+c:\dev\fury\fury-engine\src\main.cpp(57): warning C4715: 'WinMain': not all control paths return a value
+  FuryEngine.vcxproj -> C:\dev\fury\fury-engine\fury-vc2015\FuryEngine\Debug\FuryEngine.exe
+  FuryEngine.vcxproj -> C:\dev\fury\fury-engine\fury-vc2015\FuryEngine\Debug\FuryEngine.pdb (Partial PDB)

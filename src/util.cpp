@@ -39,9 +39,9 @@ void init(){
 	// Remove console since normal user will not look at debug log
 	FreeConsole();
 #endif
-FuryEng::Logger::Log("Initializing Playback/FuryEngine game code", "INIT", __FILE__, __LINE__);
+FuryEng::Logger::Log("Initializing FuryEngine game code", "INIT", __FILE__, __LINE__);
 //FuryEng::render::RenderInit();
-FuryEng::Logger::Log("Playback/FuryEngine Startup complete", "INIT" , __FILE__, __LINE__ );
+FuryEng::Logger::Log("FuryEngine Startup complete", "INIT" , __FILE__, __LINE__ );
 
 }
 

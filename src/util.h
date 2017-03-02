@@ -2,7 +2,7 @@
 #define UTIL_INCLUDED
 /*			                   		*\
 
-This file is part of Playback version 0.4-internal-dx10.
+This file is part of Fury version 0.4-internal-dx11.
 
 Copyright (c) 2017 createjump & Spectre.
 
@@ -30,6 +30,7 @@ Original creator: createjump
 // but if you include window it will already include render subsystem
 #include "render/ogl/window.h"
 #endif
+#include "render\d3d11\window.h"
 #ifdef _GITVER
 #include "ver.h"
 #endif //_GITVER
