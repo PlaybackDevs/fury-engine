@@ -28,12 +28,11 @@ Original creator: createjump
 
 
 
-
+// use std namespace, great for std::vectors l8r
 using namespace std;
 
 // Use the FuryEng namespace
 using namespace FuryEng;
-
 
 
 void OpenConsole() {
@@ -44,16 +43,14 @@ void OpenConsole() {
 
 }
 
-
 int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nCmdShow) {
-OpenConsole();
-FuryEng::init();
+#ifdef _DEBUG
+	OpenConsole();
+#endif
 Win32Window w1(hInstance);
-if (!w1.InitializeWindow()) { return -1; }
+if (!w1.InitializeWindow("Fury Engine")) { return -1; }
 w1.Run();
-FuryEng::Destruct();
-FuryEng::Logger::Log("Program loop over","MAIN" ,  __FILE__ , __LINE__);
-
+FuryEng::init();
 }
 
 

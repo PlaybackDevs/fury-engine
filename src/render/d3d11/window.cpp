@@ -18,11 +18,13 @@ Original creator: createjump
 
 \*								*/
 
-#include "window.h"
-// Developer console
-#include "../../devcons.h"
-#include <Windows.h>
 
+// Developer console
+#include "../../util.h"
+#include "../../devcons.h"
+#include "window.h"
+
+#include <Windows.h>
 
 
 Win32Window::Win32Window(HINSTANCE instance)
@@ -32,10 +34,11 @@ Win32Window::Win32Window(HINSTANCE instance)
     className = "FuryEngineD3D11";
 }
 
-bool Win32Window::InitializeWindow() {
+bool Win32Window::InitializeWindow(LPCSTR windowtitle) {
 
 	WNDCLASSEX wcex;		
 
+	FuryEng::Logger::Log("Window class, WNDCLASSEX init", "Win32Window", __FILE__, __LINE__);
 							//Set Class
 	wcex.cbSize = sizeof(WNDCLASSEX);
 	wcex.cbClsExtra = 0;
@@ -50,10 +53,11 @@ bool Win32Window::InitializeWindow() {
 	wcex.lpszMenuName = NULL;                       
 	wcex.style = CS_HREDRAW | CS_VREDRAW;
 
-	if (!RegisterClassEx(&wcex)) { return false; }
+	if (!RegisterClassEx(&wcex)) { return false; 
+	}
 
 	//Create Window
-	hwnd = CreateWindowEx(WS_EX_OVERLAPPEDWINDOW , className, "Fury Engine 0.4 Direct3D 11", WS_CAPTION | WS_SYSMENU , CW_USEDEFAULT, CW_USEDEFAULT,
+	hwnd = CreateWindowEx(WS_EX_OVERLAPPEDWINDOW , className, windowtitle, WS_CAPTION|WS_SYSMENU|WS_MINIMIZEBOX, CW_USEDEFAULT, CW_USEDEFAULT,
 		640, 480,
 		NULL, NULL, hInstance, 0);
 
@@ -65,6 +69,7 @@ bool Win32Window::InitializeWindow() {
 
 
 	//Show Window and Update Window
+	FuryEng::Logger::Log("YAY!!!", "Win32Window", __FILE__, __LINE__);
 	ShowWindow(hwnd, SW_SHOW);
 	UpdateWindow(hwnd);
 
@@ -76,7 +81,8 @@ LRESULT CALLBACK Win32Window::WndProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM
 	switch (msg) {
 	case WM_CLOSE:
 		DestroyWindow(hwnd);
-
+		// Nothing bad "happened", so close cleanly
+		FuryEng::Destruct();
 		break;
 	case WM_DESTROY:
 		PostQuitMessage(0);
@@ -95,8 +101,9 @@ WPARAM Win32Window::Run() {
 	return msg.wParam;
 }
 
-Win32Window::~Win32Window(void)
-{
+
+
+Win32Window::~Win32Window(void){
 }
 
 

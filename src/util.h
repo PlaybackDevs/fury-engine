@@ -25,28 +25,14 @@ Original creator: createjump
 
 
 #include "devcons.h"
-#if _you_really_want_build_to_break
-// Ref to this to include your renderers.
-// but if you include window it will already include render subsystem
-#include "render/ogl/window.h"
-#endif
+
+// header protection
+#ifndef _WINDOW
 #include "render\d3d11\window.h"
-#ifdef _GITVER
-#include "ver.h"
-#endif //_GITVER
-
-
-struct Vector3 {
-float x;
-float y;
-float z;
-};
-struct Vector2{
-float x;
-float y;
-};
+#endif
 
 namespace FuryEng{
+	
 void init();
 void Destruct();
 }
