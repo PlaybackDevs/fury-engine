@@ -1,4 +1,4 @@
-# Fury Game Engine [![Build status](https://ci.appveyor.com/api/projects/status/ykqix1owrt4f0w1k?svg=true)](https://ci.appveyor.com/project/createjump/fury-engine)
+# Fury Game Engine 
 
 
 A custom game engine written in C++ / DirectX 11 / Bullet Physics.
@@ -7,6 +7,7 @@ A custom game engine written in C++ / DirectX 11 / Bullet Physics.
 One of our current shortends is rendering, and audio.
  
  
-|   |   |
-|---|---|
-|   |   |
+|   Current Platforms   |
+|---|
+|Windows [![Build status](https://ci.appveyor.com/api/projects/status/ykqix1owrt4f0w1k?svg=true)](https://ci.appveyor.com/project/createjump/fury-engine)|
+
