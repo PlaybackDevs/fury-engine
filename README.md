@@ -6,3 +6,7 @@ A custom game engine written in C++ / DirectX 11 / Bullet Physics.
 # How can I help?
 One of our current shortends is rendering, and audio.
  
+ 
+|   |   |
+|---|---|
+|   |   |
