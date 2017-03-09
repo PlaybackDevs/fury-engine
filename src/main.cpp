@@ -45,10 +45,10 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 #ifdef _DEBUG
 	OpenConsole();
 #ifdef _AMD64
-	window = "Fury Engine (Debug, AMD64)";
+	Fury_Window_Title = "Fury Engine (Debug, AMD64)";
 #endif
 #ifdef _ExxEightySix
-	window = "Fury Engine (Debug, x86)";
+	Fury_Window_Title = "Fury Engine (Debug, x86)";
 #endif
 #endif
 #ifdef _RELEASE
@@ -57,7 +57,7 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 	Fury_Window_Title = "Fury Engine (AMD64)";
 #endif
 #ifdef _ExxEightySix
-	window = "Fury Engine (x86)";
+	Fury_Window_Title = "Fury Engine (x86)";
 #endif
 #endif
 #pragma endregion
