@@ -45,7 +45,7 @@ void OpenConsole() {
 
 /*window title*/
 LPCSTR Fury_Window_Title;
-
+// this d3dclass thing dosent really work per se, but it will later
 D3DClass d3d1;
 
 int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nCmdShow) {
