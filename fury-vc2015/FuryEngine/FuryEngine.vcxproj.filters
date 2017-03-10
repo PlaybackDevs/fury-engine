@@ -27,6 +27,9 @@
     <ClCompile Include="..\..\src\render\d3d11\window.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\src\render\d3d11\D3DClass.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="..\..\src\fury.rc">
@@ -49,6 +52,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="..\..\src\render\d3d11\window.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\render\d3d11\D3DClass.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

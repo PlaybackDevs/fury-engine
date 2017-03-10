@@ -68,8 +68,7 @@ bool Win32Window::InitializeWindow(LPCSTR windowtitle) {
 	}
 
 
-	//Show Window and Update Window
-	FuryEng::Logger::Log("YAY!!!", "Win32Window", __FILE__, __LINE__);
+
 	ShowWindow(hwnd, SW_SHOW);
 	UpdateWindow(hwnd);
 
@@ -80,6 +79,7 @@ LRESULT CALLBACK Win32Window::WndProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM
 
 	switch (msg) {
 	case WM_CLOSE:
+		// The close button is clicked.
 		DestroyWindow(hwnd);
 		// Nothing bad "happened", so close cleanly
 		FuryEng::Destruct();

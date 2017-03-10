@@ -30,6 +30,7 @@ Original creator: createjump
 #ifndef _WINDOW
 #include "render\d3d11\window.h"
 #endif
+#include "render\d3d11\D3DClass.h"
 
 namespace FuryEng{
 	

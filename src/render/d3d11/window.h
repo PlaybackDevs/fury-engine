@@ -7,6 +7,7 @@ Copyright (c) 2017 createjump & Spectre.
 \*			                   		*/
 #ifndef _WINDOW
 #define _WINDOW
+#include <d3d11.h>
 #include <Windows.h>
 
 
