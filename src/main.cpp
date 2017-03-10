@@ -50,22 +50,23 @@ D3DClass d3d1;
 
 int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nCmdShow) {
 // don't look in here, it contains window string stuffs
-#pragma region "Window defines"
+#pragma region "Please don't kill me for this"
 #ifdef _DEBUG
 	OpenConsole();
 #ifdef _AMD64
-	Fury_Window_Title = "Fury Engine (Debug, AMD64) Direct3D 11";
+	Fury_Window_Title = "Fury Engine (Debug, AMD64)";
 #endif
 #ifdef _ExxEightySix
-	Fury_Window_Title = "Fury Engine (Debug, x86) Direct3D 11";
+	Fury_Window_Title = "Fury Engine (Debug, x86)";
 #endif
 #endif
 #ifdef _RELEASE
+	Fury_Window_Title = "Fury Engine";
 #ifdef _AMD64
-	Fury_Window_Title = "Fury Engine (AMD64) Direct3D 11";
+	Fury_Window_Title = "Fury Engine (AMD64)";
 #endif
 #ifdef _ExxEightySix
-	Fury_Window_Title = "Fury Engine (x86) Direct3D 11";
+	Fury_Window_Title = "Fury Engine (x86)";
 #endif
 #endif
 #pragma endregion
