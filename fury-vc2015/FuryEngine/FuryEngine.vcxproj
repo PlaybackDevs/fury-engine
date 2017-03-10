@@ -116,6 +116,7 @@
   <ItemGroup>
     <ClCompile Include="..\..\src\devcons.cpp" />
     <ClCompile Include="..\..\src\main.cpp" />
+    <ClCompile Include="..\..\src\render\d3d11\D3DClass.cpp" />
     <ClCompile Include="..\..\src\render\d3d11\window.cpp" />
     <ClCompile Include="..\..\src\util.cpp" />
   </ItemGroup>
@@ -127,6 +128,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\src\devcons.h" />
+    <ClInclude Include="..\..\src\render\d3d11\D3DClass.h" />
     <ClInclude Include="..\..\src\render\d3d11\window.h" />
     <ClInclude Include="..\..\src\resource.h" />
     <ClInclude Include="..\..\src\util.h" />

@@ -20,7 +20,7 @@ Original creator: createjump
 
 #include <Windows.h>
 #include <iostream>
-#include "devcons.h"
+#include "util.h"
 
 
 
@@ -28,12 +28,7 @@ namespace FuryEng
 {
 void init(){
 // This is the init function, which initalizes all of Playback's game code (ie audio, DX10, Input).
-#ifndef _DEBUG
-	// Remove console since normal user will not look at debug log
-	FreeConsole();
-#endif
 FuryEng::Logger::Log("Initializing FuryEngine game code", "INIT", __FILE__, __LINE__);
-//FuryEng::render::RenderInit();
 FuryEng::Logger::Log("FuryEngine Startup complete", "INIT" , __FILE__, __LINE__ );
 
 }

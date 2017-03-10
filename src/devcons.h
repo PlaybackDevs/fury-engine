@@ -1,6 +1,6 @@
 /*			                   		*\
 
-This file is part of Playback version 0.4-internal-dx10.
+This file is part of Fury version 0.5.
 
 Copyright (c) 2017 createjump & Spectre.
 
