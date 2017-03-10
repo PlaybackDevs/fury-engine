@@ -41,26 +41,7 @@ LPCSTR Fury_Window_Title;
 
 int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nCmdShow) {
 // don't look in here, it contains window string stuffs
-#pragma region "Please don't kill me for this"
-#ifdef _DEBUG
-	OpenConsole();
-#ifdef _AMD64
-	Fury_Window_Title = "Fury Engine (Debug, AMD64)";
-#endif
-#ifdef _ExxEightySix
-	Fury_Window_Title = "Fury Engine (Debug, x86)";
-#endif
-#endif
-#ifdef _RELEASE
-	Fury_Window_Title = "Fury Engine";
-#ifdef _AMD64
-	Fury_Window_Title = "Fury Engine (AMD64)";
-#endif
-#ifdef _ExxEightySix
-	Fury_Window_Title = "Fury Engine (x86)";
-#endif
-#endif
-#pragma endregion
+
 Win32Window FuryRenderer_Win32Wnd(hInstance);
 
 if (!FuryRenderer_Win32Wnd.InitializeWindow(Fury_Window_Title)) { return -1; }
