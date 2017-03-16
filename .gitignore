@@ -278,4 +278,6 @@ __pycache__/
 # !tools/packages.config
 
 # Telerik's JustMock configuration file
-*.jmconfig
+*.jmconfig  
+#mp4 for gource 
+*.mp4

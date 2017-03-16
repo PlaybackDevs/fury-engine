@@ -76,8 +76,14 @@ bool Win32Window::InitializeWindow(LPCSTR windowtitle) {
 }
 
 LRESULT CALLBACK Win32Window::WndProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam) {
+	PAINTSTRUCT f_Paint;
+	HDC f_Hdc;
 
 	switch (msg) {
+	case WM_PAINT:
+		f_Hdc = BeginPaint(hwnd, &f_Paint);
+		EndPaint(hwnd, &f_Paint);
+		break;
 	case WM_CLOSE:
 		// The close button is clicked.
 		DestroyWindow(hwnd);

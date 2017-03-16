@@ -1,6 +1,6 @@
 /*			                   		*\
 
-This file is part of Fury version 0.4-internal-dx11.
+This file is part of Fury version 0.5.
 
 Copyright (c) 2017 createjump & Spectre.
 
@@ -17,3 +17,13 @@ Original creator: creator here
 
 
 \*								*/
+
+
+Code Rules:
+
+Variables:
+
+m_ for a class member variable
+f_ for a function variable
+g_ for a global variable
+
